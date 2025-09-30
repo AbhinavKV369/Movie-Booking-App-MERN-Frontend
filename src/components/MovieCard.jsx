@@ -43,7 +43,7 @@ const MovieCard = ({ movies = [] }) => {
           <div className="flex justify-center p-3">
             <button
               onClick={() => navigate(`/movies/${movie._id}`)}
-              className="flex text-center gap-2 justify-center w-full bg-secondary  py-2 rounded-xl font-medium hover:opacity-90 transition">
+              className="flex text-center gap-2 items-center justify-center w-full bg-secondary  py-2 rounded-xl font-medium hover:opacity-90 transition">
               <span ><Ticket/></span> Book Now
             </button>
           </div>
