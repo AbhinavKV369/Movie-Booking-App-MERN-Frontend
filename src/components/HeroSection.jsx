@@ -9,7 +9,7 @@ const HeroSection = () => {
     <>
       <div className='relative flex flex-col items-start justify-center gap-4 bg-[url("./assets/banner.webp")] bg-cover bg-center h-screen '>
         <div className="absolute h-screen top-0 w-full left-0 flex flex-col items-start justify-center bg-black/60">
-          <div className="font-semibold text-4xl tracking-wide mt-30 ml-6 mr-[10%] p-3 rounded-2xl max-w-[600px]">
+          <div className="font-semibold text-4xl tracking-wide mt-15 ml-6 mr-[10%] p-3 rounded-2xl max-w-[600px]">
             <h1 className=" min-w-[10px]">
               <span className="text-secondary text-5xl font-extrabold">
                 LOKAH

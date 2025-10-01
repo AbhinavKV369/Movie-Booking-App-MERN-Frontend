@@ -6,7 +6,7 @@ const MovieCard = ({ movies = [] }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-6 p-4">
+    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-6 p-4">
       {movies.map((movie) => (
         <div
           key={movie._id || movie.id}
@@ -34,7 +34,7 @@ const MovieCard = ({ movies = [] }) => {
                 {movie.genres?.map((genre) => genre.name).join(" • ")}
               </p>
               <p className="text-yellow-4000 text-xs mt-1">
-                ⭐ {movie.vote_average} ({movie.vote_count.toLocaleString(1)})
+                ⭐ {movie.vote_average.toFixed} ({movie.vote_count.toFixed(1)})
               </p>
             </div>
           </div>

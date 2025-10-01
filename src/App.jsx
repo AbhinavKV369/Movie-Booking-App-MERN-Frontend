@@ -2,6 +2,9 @@ import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Toaster } from "react-hot-toast"
 
+import MoveToTop from "./components/MoveToTop";
+
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"
 
@@ -16,8 +19,11 @@ const App = () => {
   const isAdminRoute = useLocation().pathname.startsWith("/admin");
   return (
     <>
-    <Toaster/>
+      <Toaster />
+
       {!isAdminRoute && <Navbar />}
+      <MoveToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movies" element={<Movies />} />
@@ -26,7 +32,7 @@ const App = () => {
         <Route path="/my-bookings" element={<MyBooking />} />
         <Route path="/favourites" element={<Favourites />} />
       </Routes>
-      {!isAdminRoute && <Footer /> } 
+      {!isAdminRoute && <Footer />}
     </>
   );
 };

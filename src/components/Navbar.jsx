@@ -1,16 +1,16 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, {  useState } from "react";
+import { Link } from "react-router-dom";
 import { MenuIcon, SearchIcon, XIcon } from "lucide-react";
 
 const navLinks = [
   { path: "/", label: "Home" },
   { path: "/movies", label: "Movies" },
-  { path: "/trailers", label: "Trailers" },
   { path: "/releases", label: "Releases" },
   { path: "/favourites", label: "Favorites" },
 ];
 
 const Navbar = () => {
+ 
   const [menuOpen, setMenuOpen] = useState(false);
 
   const linkClasses = "transition hover:text-secondary"; 
@@ -19,16 +19,16 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 z-50 w-full flex items-center justify-between px-3 md:px-9 py-5 shadow-md bg-black/50">
       {/* Logo */}
-      <NavLink to="/" className="max-md:flex-1">
+      <Link to="/" className="max-md:flex-1">
         <h1 className="font-bold text-2xl">
           <span className="text-secondary">KNR </span> Film City
         </h1>
-      </NavLink>
+      </Link>
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex gap-6 font-medium">
         {navLinks.map((link) => (
-          <NavLink
+          <Link
             key={link.path}
             to={link.path}
             end
@@ -36,7 +36,7 @@ const Navbar = () => {
               `${linkClasses} ${isActive ? activeClasses : ""}`
             }>
             {link.label}
-          </NavLink>
+          </Link>
         ))}
       </nav>
 
@@ -69,7 +69,7 @@ const Navbar = () => {
             {/* Mobile Links */}
             <nav className="flex flex-col text-center gap-6 font-medium">
               {navLinks.map((link) => (
-                <NavLink
+                <Link
                   key={link.path}
                   to={link.path}
                   end
@@ -78,7 +78,7 @@ const Navbar = () => {
                     `${linkClasses} ${isActive ? activeClasses : ""}`
                   }>
                   {link.label}
-                </NavLink>
+                </Link>
               ))}
             </nav>
 

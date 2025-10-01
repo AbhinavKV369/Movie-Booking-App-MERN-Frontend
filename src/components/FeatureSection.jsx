@@ -1,9 +1,9 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
-import ColorGradient from './ColorGradient';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import ColorGradient from "./ColorGradient";
 
-import {dummyShowsData} from "../assets/assets"
-import MovieCard from './MovieCard';
+import { dummyShowsData } from "../assets/assets";
+import MovieCard from "./MovieCard";
 
 const FeatureSection = () => {
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ const FeatureSection = () => {
         </button>
       </div>
       <div>
-<MovieCard movies={dummyShowsData} />
+        <MovieCard movies={dummyShowsData} />
       </div>
       <div className="flex items-center justify-center">
         <button
@@ -30,6 +30,6 @@ const FeatureSection = () => {
       </div>
     </div>
   );
-}
+};
 
-export default FeatureSection
+export default FeatureSection;
