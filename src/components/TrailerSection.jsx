@@ -12,13 +12,12 @@ const TrailerSection = () => {
       <h1 id="trailers" className="text-xl font-bold mt-6">
         Trailers
       </h1>
-
+  
       {/* Main Player (Responsive) */}
       <div className="relative w-full pt-[56.25%] mt-4">
         <ReactPlayer
           src={currentTrailer.videoUrl}
           controls
-          playing
           className="absolute top-0 left-0"
           width="100%"
           height="100%"
@@ -38,6 +37,7 @@ const TrailerSection = () => {
               }`}
             onClick={() => setCurrentTrailer(trailer)}>
             <img
+              loading="lazy"
               src={trailer.image}
               alt={`Trailer ${index + 1}`}
               className="w-full h-28 object-cover"
