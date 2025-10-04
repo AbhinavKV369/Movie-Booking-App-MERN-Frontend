@@ -16,184 +16,159 @@ export const assets = {
 
 export const dummyTrailers = [
     {
-        image: "https://img.youtube.com/vi/WpW36ldAqnM/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=WpW36ldAqnM'
+        image: "https://img.youtube.com/vi/l275FrBatio/maxresdefault.jpg",
+        videoUrl: 'https://www.youtube.com/watch?v=l275FrBatio' // Odum Kuthira Chadum Kuthira
     },
     {
-        image: "https://img.youtube.com/vi/-sAOWhvheK8/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=-sAOWhvheK8'
+        image: "https://img.youtube.com/vi/B4-Xhaajyok/maxresdefault.jpg",
+        videoUrl: 'https://www.youtube.com/watch?v=B4-Xhaajyok' // Hridayapoorvam
     },
     {
-        image: "https://img.youtube.com/vi/1pHDWnXmK7Y/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=1pHDWnXmK7Y'
+        image: "https://img.youtube.com/vi/BdSgJv7nsTE/maxresdefault.jpg",
+        videoUrl: 'https://www.youtube.com/watch?v=BdSgJv7nsTE' // Sumathi Valavu
     },
     {
-        image: "https://img.youtube.com/vi/umiKiW4En9g/maxresdefault.jpg",
-        videoUrl: 'https://www.youtube.com/watch?v=umiKiW4En9g'
+        image: "https://img.youtube.com/vi/UttccYQXpTM/maxresdefault.jpg",
+        videoUrl: 'https://www.youtube.com/watch?v=UttccYQXpTM' // Aavesham
     },
 ]
 
-const dummyCastsData = [
-    { "name": "Milla Jovovich", "profile_path": "https://image.tmdb.org/t/p/original/usWnHCzbADijULREZYSJ0qfM00y.jpg", },
-    { "name": "Dave Bautista", "profile_path": "https://image.tmdb.org/t/p/original/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg", },
-    { "name": "Arly Jover", "profile_path": "https://image.tmdb.org/t/p/original/zmznPrQ9GSZwcOIUT0c3GyETwrP.jpg", },
-    { "name": "Amara Okereke", "profile_path": "https://image.tmdb.org/t/p/original/nTSPtzWu6deZTJtWXHUpACVznY4.jpg", },
-    { "name": "Fraser James", "profile_path": "https://image.tmdb.org/t/p/original/mGAPQG2OKTgdKFkp9YpvCSqcbgY.jpg", },
-    { "name": "Deirdre Mullins", "profile_path": "https://image.tmdb.org/t/p/original/lJm89neuiVlYISEqNpGZA5kTAnP.jpg", },
-    { "name": "Sebastian Stankiewicz", "profile_path": "https://image.tmdb.org/t/p/original/hLN0Ca09KwQOFLZLPIEzgTIbqqg.jpg", },
-    { "name": "Tue Lunding", "profile_path": "https://image.tmdb.org/t/p/original/qY4W0zfGBYzlCyCC0QDJS1Muoa0.jpg", },
-    { "name": "Jacek Dzisiewicz", "profile_path": "https://image.tmdb.org/t/p/original/6Ksb8ANhhoWWGnlM6O1qrySd7e1.jpg", },
-    { "name": "Ian Hanmore", "profile_path": "https://image.tmdb.org/t/p/original/yhI4MK5atavKBD9wiJtaO1say1p.jpg", },
-    { "name": "Eveline Hall", "profile_path": "https://image.tmdb.org/t/p/original/uPq4xUPiJIMW5rXF9AT0GrRqgJY.jpg", },
-    { "name": "Kamila Klamut", "profile_path": "https://image.tmdb.org/t/p/original/usWnHCzbADijULREZYSJ0qfM00y.jpg", },
-    { "name": "Caoilinn Springall", "profile_path": "https://image.tmdb.org/t/p/original/uZNtbPHowlBYo74U1qlTaRlrdiY.jpg", },
-    { "name": "Jan Kowalewski", "profile_path": "https://image.tmdb.org/t/p/original/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg", },
-    { "name": "Pawel Wysocki", "profile_path": "https://image.tmdb.org/t/p/original/zmznPrQ9GSZwcOIUT0c3GyETwrP.jpg", },
-    { "name": "Simon Lööf", "profile_path": "https://image.tmdb.org/t/p/original/cbZrB8crWlLEDjVUoak8Liak6s.jpg", },
-    { "name": "Tomasz Cymerman", "profile_path": "https://image.tmdb.org/t/p/original/nTSPtzWu6deZTJtWXHUpACVznY4.jpg", }
+export const dummyCastsData = [
+    { "name": "Fahadh Faasil", "profile_path": "https://image.tmdb.org/t/p/original/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg", },
+    { "name": "Hipzster", "profile_path": "https://image.tmdb.org/t/p/original/usWnHCzbADijULREZYSJ0qfM00y.jpg", },
+    { "name": "Mithun Jai Sankar", "profile_path": "https://image.tmdb.org/t/p/original/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg", },
+    { "name": "Roshan Shanavas", "profile_path": "https://image.tmdb.org/t/p/original/zmznPrQ9GSZwcOIUT0c3GyETwrP.jpg", },
+    { "name": "Sajin Gopu", "profile_path": "https://image.tmdb.org/t/p/original/nTSPtzWu6deZTJtWXHUpACVznY4.jpg", },
+    { "name": "Pooja Mohanraj", "profile_path": "https://image.tmdb.org/t/p/original/mGAPQG2OKTgdKFkp9YpvCSqcbgY.jpg", },
+    { "name": "Ashish Vidyarthi", "profile_path": "https://image.tmdb.org/t/p/original/lJm89neuiVlYISEqNpGZA5kTAnP.jpg", },
+    { "name": "Pranav Raj", "profile_path": "https://image.tmdb.org/t/p/original/hLN0Ca09KwQOFLZLPIEzgTIbqqg.jpg", },
+    { "name": "Midhun Muraleedharan", "profile_path": "https://image.tmdb.org/t/p/original/qY4W0zfGBYzlCyCC0QDJS1Muoa0.jpg", },
+    { "name": "Mansoor Ali Khan", "profile_path": "https://image.tmdb.org/t/p/original/6Ksb8ANhhoWWGnlM6O1qrySd7e1.jpg", },
+    { "name": "Thangam Mohan", "profile_path": "https://image.tmdb.org/t/p/original/yhI4MK5atavKBD9wiJtaO1say1p.jpg", },
+    { "name": "Prem Kumar", "profile_path": "https://image.tmdb.org/t/p/original/uPq4xUPiJIMW5rXF9AT0GrRqgJY.jpg", },
 ]
 
 export const dummyShowsData = [
     {
         "_id": "324544",
         "id": 324544,
-        "title": "In the Lost Lands",
-        "overview": "A queen sends the powerful and feared sorceress Gray Alys to the ghostly wilderness of the Lost Lands in search of a magical power, where she and her guide, the drifter Boyce, must outwit and outfight both man and demon.",
+        "title": "Odum Kuthira Chadum Kuthira",
+        "overview": "Aby, a cheerful groom, has his life turned upside down by his bride's words. He later meets a stern girl who reluctantly seeks his help. As they mend their broken paths, his ex-fiance reappears, finally understanding Aby's deepest dream. Amidst the rekindled past and new connections, Aby reveals a secret that ultimately brings him peace.",
         "poster_path": "https://image.tmdb.org/t/p/original/dDlfjR7gllmr8HTeN6rfrYhTdwX.jpg",
         "backdrop_path": "https://image.tmdb.org/t/p/original/op3qmNhvwEvyT7UFyPbIfQmKriB.jpg",
         "genres": [
-            { "id": 28, "name": "Action" },
-            { "id": 14, "name": "Fantasy" },
-            { "id": 12, "name": "Adventure" }
+            { "id": 35, "name": "Comedy" },
+            { "id": 18, "name": "Drama" },
+            { "id": 10749, "name": "Romance" }
         ],
         "casts": dummyCastsData,
-        "release_date": "2025-02-27",
-        "original_language": "en",
-        "tagline": "She seeks the power to free her people.",
-        "vote_average": 6.4,
-        "vote_count": 15000,
-        "runtime": 102,
+        "release_date": "2025-08-29",
+        "original_language": "ml",
+        "tagline": "Run like a horse, jump like a horse.",
+        "vote_average": 6.8,
+        "vote_count": 17000,
+        "runtime": 140, // Estimated runtime
     },
     {
         "_id": "1232546",
         "id": 1232546,
-        "title": "Until Dawn",
-        "overview": "One year after her sister Melanie mysteriously disappeared, Clover and her friends head into the remote valley where she vanished in search of answers. Exploring an abandoned visitor center, they find themselves stalked by a masked killer and horrifically murdered one by one...only to wake up and find themselves back at the beginning of the same evening.",
+        "title": "Hridayapoorvam",
+        "overview": "Sandeep Balakrishnan, a heart transplant recipient, visits Pune to meet the family of his late heart donor, a spirited Colonel. When circumstances force him to stay with the family, he becomes entwined in their lives.",
         "poster_path": "https://image.tmdb.org/t/p/original/juA4IWO52Fecx8lhAsxmDgy3M3.jpg",
         "backdrop_path": "https://image.tmdb.org/t/p/original/icFWIk1KfkWLZnugZAJEDauNZ94.jpg",
         "genres": [
-            { "id": 27, "name": "Horror" },
-            { "id": 9648, "name": "Mystery" }
+            { "id": 10749, "name": "Romance" },
+            { "id": 18, "name": "Drama" },
+            { "id": 35, "name": "Comedy" }
         ],
         "casts": dummyCastsData,
-        "release_date": "2025-04-23",
-        "original_language": "en",
-        "tagline": "Every night a different nightmare.",
-        "vote_average": 6.405,
-        "vote_count": 18000,
-        "runtime": 103,
+        "release_date": "2025-08-28",
+        "original_language": "ml",
+        "tagline": "Wholeheartedly.",
+        "vote_average": 6.9,
+        "vote_count": 21000,
+        "runtime": 151,
     },
     {
         "_id": "552524",
         "id": 552524,
-        "title": "Lilo & Stitch",
-        "overview": "The wildly funny and touching story of a lonely Hawaiian girl and the fugitive alien who helps to mend her broken family.",
+        "title": "Sumathi Valavu",
+        "overview": "A haunted curve in Kerala, named after Sumathi's tragic death, draws various people into supernatural encounters. As they experience strange events, the mystery of Sumathi and the road's dark history begins to unfold.",
         "poster_path": "https://image.tmdb.org/t/p/original/mKKqV23MQ0uakJS8OCE2TfV5jNS.jpg",
         "backdrop_path": "https://image.tmdb.org/t/p/original/7Zx3wDG5bBtcfk8lcnCWDOLM4Y4.jpg",
         "genres": [
-            { "id": 10751, "name": "Family" },
-            { "id": 35, "name": "Comedy" },
-            { "id": 878, "name": "Science Fiction" }
+            { "id": 27, "name": "Horror" },
+            { "id": 9648, "name": "Mystery" },
+            { "id": 18, "name": "Drama" }
         ],
         "casts": dummyCastsData,
-        "release_date": "2025-05-17",
-        "original_language": "en",
-        "tagline": "Hold on to your coconuts.",
-        "vote_average": 7.117,
-        "vote_count": 27500,
-        "runtime": 108,
+        "release_date": "2025-07-28",
+        "original_language": "ml",
+        "tagline": "The curve no one dares cross.",
+        "vote_average": 7.1,
+        "vote_count": 15500,
+        "runtime": 135, // Estimated runtime
     },
     {
         "_id": "668489",
         "id": 668489,
-        "title": "Havoc",
-        "overview": "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
+        "title": "Aavesham",
+        "overview": "Three youngsters in Bengaluru befriend a local gangster named 'Rangan' to help them take revenge on their college bully. However, their interactions with Rangan lead to unexpected twists and turns, shaping the narrative into a compelling blend of humor, drama, and action.",
         "poster_path": "https://image.tmdb.org/t/p/original/ubP2OsF3GlfqYPvXyLw9d78djGX.jpg",
         "backdrop_path": "https://image.tmdb.org/t/p/original/65MVgDa6YjSdqzh7YOA04mYkioo.jpg",
         "genres": [
             { "id": 28, "name": "Action" },
-            { "id": 80, "name": "Crime" },
-            { "id": 53, "name": "Thriller" }
+            { "id": 35, "name": "Comedy" },
+            { "id": 12, "name": "Adventure" }
         ],
         "casts": dummyCastsData,
-        "release_date": "2025-04-25",
-        "original_language": "en",
-        "tagline": "No law. Only disorder.",
-        "vote_average": 6.537,
-        "vote_count": 35960,
-        "runtime": 107,
+        "release_date": "2025-04-11",
+        "original_language": "ml",
+        "tagline": "A rollercoaster of excitement.",
+        "vote_average": 8.0,
+        "vote_count": 45000,
+        "runtime": 140, // Estimated runtime
     },
     {
         "_id": "950387",
         "id": 950387,
-        "title": "A Minecraft Movie",
-        "overview": "Four misfits find themselves struggling with ordinary problems when they are suddenly pulled through a mysterious portal into the Overworld: a bizarre, cubic wonderland that thrives on imagination. To get back home, they'll have to master this world while embarking on a magical quest with an unexpected, expert crafter, Steve.",
+        "title": "Manjummel Boys",
+        "overview": "Based on a real-life incident that happened in Guna Caves in 2006, the film follows a group of friends who travel to Kodaikanal. Their vacation is affected when one of them becomes trapped in a deep hole in the Guna Caves, prompting a dangerous rescue effort.",
         "poster_path": "https://image.tmdb.org/t/p/original/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg",
         "backdrop_path": "https://image.tmdb.org/t/p/original/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
         "genres": [
-            { "id": 10751, "name": "Family" },
-            { "id": 35, "name": "Comedy" },
             { "id": 12, "name": "Adventure" },
-            { "id": 14, "name": "Fantasy" }
+            { "id": 53, "name": "Thriller" },
+            { "id": 18, "name": "Drama" }
         ],
         "casts": dummyCastsData,
-        "release_date": "2025-03-31",
-        "original_language": "en",
-        "tagline": "Be there and be square.",
-        "vote_average": 6.516,
-        "vote_count": 15225,
-        "runtime": 101,
+        "release_date": "2025-02-22",
+        "original_language": "ml",
+        "tagline": "One life. One friend.",
+        "vote_average": 8.2,
+        "vote_count": 55000,
+        "runtime": 135, // Estimated runtime
     },
     {
         "_id": "575265",
         "id": 575265,
-        "title": "Mission: Impossible - The Final Reckoning",
-        "overview": "Ethan Hunt and team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Hunt's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
+        "title": "L2: Empuraan",
+        "overview": "The film explores the journey and rise of Khureshi Ab'raam / Stephen Nedumpally, a powerful figure in the criminal and political underworld, continuing the events from 'Lucifer'.",
         "poster_path": "https://image.tmdb.org/t/p/original/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
         "backdrop_path": "https://image.tmdb.org/t/p/original/1p5aI299YBnqrEEvVGJERk2MXXb.jpg",
         "genres": [
             { "id": 28, "name": "Action" },
-            { "id": 12, "name": "Adventure" },
-            { "id": 53, "name": "Thriller" }
+            { "id": 53, "name": "Thriller" },
+            { "id": 80, "name": "Crime" }
         ],
         "casts": dummyCastsData,
-        "release_date": "2025-05-17",
-        "original_language": "en",
-        "tagline": "Our lives are the sum of our choices.",
-        "vote_average": 7.042,
-        "vote_count": 19885,
-        "runtime": 170,
+        "release_date": "2025-03-27",
+        "original_language": "ml",
+        "tagline": "The Empire Strikes Back.",
+        "vote_average": 7.5,
+        "vote_count": 35000,
+        "runtime": 175, // Estimated runtime
     },
-    {
-        "_id": "986056",
-        "id": 986056,
-        "title": "Thunderbolts*",
-        "overview": "After finding themselves ensnared in a death trap, seven disillusioned castoffs must embark on a dangerous mission that will force them to confront the darkest corners of their pasts.",
-        "poster_path": "https://image.tmdb.org/t/p/original/m9EtP1Yrzv6v7dMaC9mRaGhd1um.jpg",
-        "backdrop_path": "https://image.tmdb.org/t/p/original/rthMuZfFv4fqEU4JVbgSW9wQ8rs.jpg",
-        "genres": [
-            { "id": 28, "name": "Action" },
-            { "id": 878, "name": "Science Fiction" },
-            { "id": 12, "name": "Adventure" }
-        ],
-        "casts": dummyCastsData,
-        "release_date": "2025-04-30",
-        "original_language": "en",
-        "tagline": "Everyone deserves a second shot.",
-        "vote_average": 7.443,
-        "vote_count": 23569,
-        "runtime": 127,
-    }
 ]
 
 export const dummyDateTimeData = {
@@ -226,7 +201,7 @@ export const dummyDashboardData = {
     "activeShows": [
         {
             "_id": "68352363e96d99513e4221a4",
-            "movie": dummyShowsData[0],
+            "movie": dummyShowsData[0], // Odum Kuthira Chadum Kuthira
             "showDateTime": "2025-06-30T02:30:00.000Z",
             "showPrice": 59,
             "occupiedSeats": {
@@ -237,21 +212,21 @@ export const dummyDashboardData = {
         },
         {
             "_id": "6835238fe96d99513e4221a8",
-            "movie": dummyShowsData[1],
+            "movie": dummyShowsData[1], // Hridayapoorvam
             "showDateTime": "2025-06-30T15:30:00.000Z",
             "showPrice": 81,
             "occupiedSeats": {},
         },
         {
             "_id": "6835238fe96d99513e4221a9",
-            "movie": dummyShowsData[2],
+            "movie": dummyShowsData[2], // Sumathi Valavu
             "showDateTime": "2025-06-30T03:30:00.000Z",
             "showPrice": 81,
             "occupiedSeats": {},
         },
         {
             "_id": "6835238fe96d99513e4221aa",
-            "movie": dummyShowsData[3],
+            "movie": dummyShowsData[3], // Aavesham
             "showDateTime": "2025-07-15T16:30:00.000Z",
             "showPrice": 81,
             "occupiedSeats": {
@@ -263,7 +238,7 @@ export const dummyDashboardData = {
         },
         {
             "_id": "683682072b5989c29fc6dc0d",
-            "movie": dummyShowsData[4],
+            "movie": dummyShowsData[4], // Manjummel Boys
             "showDateTime": "2025-06-05T15:30:00.000Z",
             "showPrice": 49,
             "occupiedSeats": {
@@ -278,7 +253,7 @@ export const dummyDashboardData = {
         },
         {
             "_id": "68380044686d454f2116b39a",
-            "movie": dummyShowsData[5],
+            "movie": dummyShowsData[5], // L2: Empuraan
             "showDateTime": "2025-06-20T16:00:00.000Z",
             "showPrice": 79,
             "occupiedSeats": {
@@ -296,7 +271,7 @@ export const dummyBookingData = [
         "user": { "name": "GreatStack", },
         "show": {
             _id: "68352363e96d99513e4221a4",
-            movie: dummyShowsData[0],
+            movie: dummyShowsData[0], // Odum Kuthira Chadum Kuthira
             showDateTime: "2025-06-30T02:30:00.000Z",
             showPrice: 59,
         },
@@ -309,7 +284,7 @@ export const dummyBookingData = [
         "user": { "name": "GreatStack", },
         "show": {
             _id: "68352363e96d99513e4221a4",
-            movie: dummyShowsData[0],
+            movie: dummyShowsData[0], // Odum Kuthira Chadum Kuthira
             showDateTime: "2025-06-30T02:30:00.000Z",
             showPrice: 59,
         },
@@ -322,7 +297,7 @@ export const dummyBookingData = [
         "user": { "name": "GreatStack", },
         "show": {
             _id: "68352363e96d99513e4221a4",
-            movie: dummyShowsData[0],
+            movie: dummyShowsData[0], // Odum Kuthira Chadum Kuthira
             showDateTime: "2025-06-30T02:30:00.000Z",
             showPrice: 59,
         },
