@@ -4,7 +4,6 @@ import { Toaster } from "react-hot-toast"
 
 import MoveToTop from "./components/MoveToTop";
 
-
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer"
 

@@ -2,13 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { dummyDateTimeData, dummyShowsData } from "../assets/assets.js";
 import ColorGradient from "../components/ColorGradient";
-import {  Heart, LucideWashingMachine, PlayIcon, TicketIcon } from "lucide-react";
+import {  Heart,PlayIcon, TicketIcon } from "lucide-react";
 import DateSelect from "../components/DateSelect.jsx";
 
 const MovieDetails = () => {
   const { id } = useParams();
   const [show, setShow] = useState(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const selectedShow = dummyShowsData.find((s) => s._id === id);
@@ -17,7 +16,6 @@ const MovieDetails = () => {
     } else {
       setShow(null);
     }
-    setLoading(false);
   }, [id]);
 
   const formatRuntime = (mins) => {
@@ -26,14 +24,6 @@ const MovieDetails = () => {
     const minutes = mins % 60;
     return `${hours}h ${minutes}m`;
   };
-
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center h-screen font-medium text-xl">
-        Loading...
-      </div>
-    );
-  }
 
   if (!show) {
     return (
@@ -96,7 +86,7 @@ const MovieDetails = () => {
                 <img
                   src={cast.profile_path}
                   alt={cast.name}
-                  className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
 
@@ -110,7 +100,7 @@ const MovieDetails = () => {
           ))}
         </div>
       </div>
-      <DateSelect/>
+      <DateSelect id={id} dateTime={show.dateTime}/>
     </div>
   );
 };
