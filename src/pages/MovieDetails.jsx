@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Heart, PlayIcon, TicketIcon } from "lucide-react";
 import { dummyDateTimeData, dummyShowsData } from "../assets/assets.js";
 import ColorGradient from "../components/ColorGradient";
-import {  Heart,PlayIcon, TicketIcon } from "lucide-react";
 import DateSelect from "../components/DateSelect.jsx";
 
 const MovieDetails = () => {

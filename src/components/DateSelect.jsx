@@ -50,7 +50,7 @@ const DateSelect = ({ id = "", dateTime = [] }) => {
                 <button
                   key={date}
                   onClick={()=>setSelected(date)}
-                  className={`flex flex-col items-center min-w-[80px] px-4 py-3 rounded-2xl transition-all duration-200
+                  className={`flex flex-col items-center min-w-[40px] px-3 py-3 rounded-2xl transition-all duration-200
                     ${
                       selected === date
                         ? "bg-red-500 text-white shadow-lg scale-105"
