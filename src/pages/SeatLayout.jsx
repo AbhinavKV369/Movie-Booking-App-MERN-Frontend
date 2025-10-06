@@ -1,67 +1,111 @@
-import React, { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
-import { dummyDateTimeData, dummyShowsData } from '../assets/assets';
-import ColorGradient from '../components/ColorGradient';
-import { TimerIcon } from 'lucide-react';
-import isoTimeFormat from '../library/isoTimeFormat';
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { dummyDateTimeData, dummyShowsData } from "../assets/assets";
+import ColorGradient from "../components/ColorGradient";
+import { TimerIcon } from "lucide-react";
+import isoTimeFormat from "../library/isoTimeFormat";
+import toast from "react-hot-toast";
 
 const SeatLayout = () => {
-  const {id,date} = useParams();
-  const [selectedSeats,setSelectedSeats] = useState([]);
-  const [selectedTime,setSelectedTime] = useState(null);
-  const [show,setShow] = useState(null);
+
+  const groupRows = [["A","B"],["C","D"],["E","F"],["G","H"],["I","J"]]
+
+  const { id, date } = useParams();
+  const [selectedSeats, setSelectedSeats] = useState([]);
+  const [selectedTime, setSelectedTime] = useState(null);
+  const [show, setShow] = useState(null);
 
   const navigate = useNavigate();
 
-  const getShow = () =>{
-    const show = dummyShowsData.find((show)=> id === show._id);
-    if(show){
+  const getShow = () => {
+    const show = dummyShowsData.find((show) => id === show._id);
+    if (show) {
       setShow({
         movie: show,
-        dateTime:dummyDateTimeData
+        dateTime: dummyDateTimeData,
       });
     }
+  };
+
+  const handleSeatClick = (seatId) =>{
+    if(!selectedTime){
+      return toast.error("Please select time first");
+    }
+    if(!selectedSeats.includes(seatId)&&selectedSeats.length>4){
+      return toast.error("Your can only select 4 seats")
+    }
+    setSelectedSeats(prev=>prev.includes(seatId)?prev.filter((seat)=>seat!==seatId):[...prev,seatId])
   }
 
-  useEffect(()=>{
+  const renderSeats = (row, count) => {
+    <div key={row} className="flex gap-2 mt-2">
+      <div className="flex flex-wrap items-center justify-center gap-2">
+        {Array.from({ length: count }, (_, i) => {
+          const seatId = `${row}${i + 1}`;
+          return <button  >{seatId}</button>;
+        })}
+      </div>
+    </div>;
+  };
+
+  useEffect(() => {
     getShow();
-  },[]);
+  }, []);
 
   return show ? (
-    <div className="mt-30 flex flex-col md:flex-row items-center gap-6 mx-20 ">
+    <div className="mt-28 flex flex-col md:flex-row items-start gap-8 mx-8 md:mx-20 text-white relative h-screen">
       <ColorGradient top="0" />
       <ColorGradient top="50%" right="0" />
-      <div className="bg-gray-800/70 h-69 w-60 rounded-xl">
-        <h1 className="font-bold text-md text-center py-5 ">
+
+      {/* Left Timing Box */}
+      <div className="bg-black/40 rounded-2xl shadow-xl w-full md:w-72 p-5 backdrop-blur-sm border border-gray-700">
+        <h1 className="font-semibold text-lg text-center text-gray-100 mb-5 tracking-wide">
           Available Timings
         </h1>
-        <div className='space-y-3 p-3'>
+        <div className="space-y-3">
           {show.dateTime[date].map((item) => (
             <button
-            onClick={()=>setSelectedTime(item.time)}
+              onClick={() => setSelectedTime(item.time)}
               key={item.time}
-              className={`flex items-center gap-2  px-2 px- w-max rounded-r-md cursor-pointer transition ${
+              className={`flex items-center gap-2 w-full px-4 py-2 rounded-lg transition duration-300 ${
                 selectedTime === item.time
-                  ? "bg-secondary text-white"
-                  : "hover:bg-secondary/30"
+                  ? "bg-red-600 text-white"
+                  : "bg-gray-800 hover:bg-red-600/60 text-gray-300"
               }`}>
-              <TimerIcon className='h-6 w-6'/>
-              {isoTimeFormat(item.time)} 
+              <TimerIcon className="h-5 w-5" />
+              <span className="text-sm font-medium">
+                {isoTimeFormat(item.time)}
+              </span>
             </button>
           ))}
         </div>
       </div>
-      <div className="bg-black/40 w-full p-2 rounded-3xl">
-        <h1 className="font-bold text-xl md:text-2xl tracking-wide px-20 my-5 text-center">
+
+      {/* Right Seat Section */}
+      <div className="flex flex-col flex-1 items-center w-full backdrop-blur-sm p-6 rounded-3xl shadow-lg border border-gray-800">
+        <h1 className="font-semibold text-xl md:text-2xl tracking-wide text-center mb-6 text-gray-100">
           Select your seats
         </h1>
+        <svg
+          className="w-full h-8"
+          viewBox="0 0 500 100"
+          preserveAspectRatio="none">
+          <path
+            d="M0,80 Q250,0 500,80"
+            fill="transparent"
+            stroke="#b91c1c"
+            strokeWidth="20"
+          />
+        </svg>
+        <p className="p-1 border-2 rounded-xl"> Screen Mode</p>
+        <button className="p-2 bg-secondary/90 font-medium rounded-lg hover:scale-103 transition duration-300 mt-20 ">Proceed to Payment </button>
       </div>
     </div>
   ) : (
-    <div className="flex items-center justify-center h-screen ">
-      <h1 className="text-2xl font-medium">No Shows available</h1>
+    <div className="flex items-center justify-center h-screen text-gray-300">
+      <h1 className="text-2xl font-medium">No Shows Available</h1>
     </div>
   );
-}
+};
 
-export default SeatLayout
+export default SeatLayout;
