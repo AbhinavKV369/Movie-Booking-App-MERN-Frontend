@@ -62,7 +62,7 @@ const SeatLayout = () => {
                   selectedSeats.includes(seatId) && "bg-secondary text-white"
                 }`}>
                 {seatId}
-              </button>
+              </button> 
             );
           })}
         </div>
@@ -128,7 +128,7 @@ const SeatLayout = () => {
             <div key={idx}> {group.map((row) => renderSeats(row))}</div>
           ))}
         </div>
-        <button className="p-2 bg-secondary/90 font-medium rounded-lg hover:scale-95 transition duration-300 mt-20 ">
+        <button className="px-6 py-2  bg-secondary/80 font-medium rounded-3xl hover:scale-95 transition duration-300 mt-20 ">
           Proceed to Payment<span className="font-bold text-xl"> →</span>
         </button>
       </div>
