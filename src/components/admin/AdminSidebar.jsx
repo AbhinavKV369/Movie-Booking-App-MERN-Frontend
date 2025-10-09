@@ -24,8 +24,7 @@ const AdminSidebar = () => {
   ];
 
   return (
-    <aside className="fixed top-0 left-0 z-40 w-[40%] md:w-64 h-full bg-gradient-to-b from-gray-900 to-gray-950 border-r border-gray-800 shadow-lg flex flex-col items-center">
-    
+    <aside className="fixed top-0 left-0 z-40 w-[40%] md:w-64 h-full bg-black/40 border-gray-800 shadow-lg flex flex-col items-center">
       {/* Profile */}
       <div className="flex flex-col items-center gap-2 mt-8">
         <img

@@ -54,7 +54,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className="relative p-4 md:p-8 w-full bg-gray-950 min-h-screen text-white">
+    <div className="relative p-4 md:p-8 w-full bg-black/40 min-h-screen text-white">
       <ColorGradient right="0" top="10px" />
       <TitleComponent text1="Admin" text2="Dashboard" />
 
@@ -97,7 +97,9 @@ const Dashboard = () => {
                   className="h-80 w-full object-cover rounded-t-xl"
                 />
                 <div className=" mt-3 mx-2">
-                  <h1 className="font-bold text-gray-300">{show.movie.title}</h1>
+                  <h1 className="font-bold text-gray-300">
+                    {show.movie.title}
+                  </h1>
                   <p>Show Price: ₹{show.showPrice}</p>
                 </div>
               </div>
