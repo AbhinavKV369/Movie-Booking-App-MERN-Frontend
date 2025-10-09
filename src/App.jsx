@@ -13,7 +13,7 @@ import SeatLayout from "./pages/SeatLayout";
 import MyBooking from "./pages/MyBooking";
 import Favourites from "./pages/Favourites";
 
-import Layout from "./pages/admin/Layout";
+import Layout from "./pages/admin/AdminLayout";
 import Dashboard from "./pages/admin/Dashboard";
 import AddShows from "./pages/admin/AddShows";
 import ListShows from "./pages/admin/ListShows";
@@ -39,7 +39,7 @@ const App = () => {
         <Route path="/favourites" element={<Favourites />} />
 
         {/* Admin Routes */}
-        <Route path="/admin" element={<Layout />}>
+        <Route path="/admin" element={<AdminLayout />}>
           <Route index element={<Navigate to="dashboard" replace />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="add-shows" element={<AddShows />} />
