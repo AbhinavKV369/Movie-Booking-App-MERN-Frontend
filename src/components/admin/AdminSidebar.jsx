@@ -1,12 +1,19 @@
 import React from "react";
-import { LayoutDashboard, ListCheck, ListIcon, PlusCircle } from "lucide-react";
+import {
+  LayoutDashboard,
+  ListCheck,
+  ListIcon,
+  PlusCircle,
+  LogOut,
+} from "lucide-react";
 import { NavLink } from "react-router-dom";
+
 
 const AdminSidebar = () => {
   const user = {
     firstName: "Admin",
     lastName: "User",
-    imageUrl: "https://via.placeholder.com/150", // placeholder image
+    imageUrl: "https://via.placeholder.com/150",
   };
 
   const adminNavlinks = [
@@ -17,13 +24,14 @@ const AdminSidebar = () => {
   ];
 
   return (
-    <div className="fixed bg-[#0f0f0f] text-white h-full w-64 p-6 flex flex-col items-center shadow-lg">
-      {/* Profile Section */}
-      <div className="flex flex-col items-center gap-2 mt-6">
+    <aside className="fixed top-0 left-0 z-40 w-[40%] md:w-64 h-full bg-gradient-to-b from-gray-900 to-gray-950 border-r border-gray-800 shadow-lg flex flex-col items-center">
+    
+      {/* Profile */}
+      <div className="flex flex-col items-center gap-2 mt-8">
         <img
           src={user.imageUrl}
           alt="profile"
-          className="h-24 w-24 rounded-full border-2 border-gray-600 object-cover"
+          className="h-20 w-20 rounded-full border-2 border-gray-700 object-cover"
         />
         <h2 className="text-lg font-semibold mt-2">
           {user.firstName} {user.lastName}
@@ -32,7 +40,7 @@ const AdminSidebar = () => {
       </div>
 
       {/* Nav Links */}
-      <div className="mt-10 w-full flex flex-col gap-3">
+      <nav className="mt-10 w-full flex flex-col gap-2 px-4">
         {adminNavlinks.map((navLink, idx) => {
           const Icon = navLink.icon;
           return (
@@ -40,20 +48,26 @@ const AdminSidebar = () => {
               key={idx}
               to={navLink.path}
               className={({ isActive }) =>
-                `flex items-center gap-3 px-4 py-2 rounded-xl transition-all duration-200 
-                ${
-                  isActive
-                    ? "bg-gradient-to-r from-indigo-500 to-purple-500 text-white"
-                    : "hover:bg-gray-800 text-gray-300"
-                }`
+                `flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 
+                 ${
+                   isActive
+                     ? "bg-gradient-to-r from-red-600 to-red-500 text-white shadow-lg"
+                     : "text-gray-400 hover:text-white hover:bg-gray-800/70"
+                 }`
               }>
               <Icon size={20} />
               <span>{navLink.name}</span>
             </NavLink>
           );
         })}
-      </div>
-    </div>
+      </nav>
+
+      {/* Logout */}
+      <button className="mt-auto mb-8 flex items-center gap-2 px-4 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800/70 transition">
+        <LogOut size={18} />
+        <span>Logout</span>
+      </button>
+    </aside>
   );
 };
 

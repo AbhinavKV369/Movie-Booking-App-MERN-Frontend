@@ -5,16 +5,14 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div className="flex flex-col h-screen">
-      {/* Navbar */}
-      <AdminNavbar />
+    <div className="flex h-screen bg-gray-950 text-white">
+      {/* Sidebar */}
+      <AdminSidebar />
 
-      {/* Sidebar + Main Content */}
-      <div className="flex flex-1">
-        <AdminSidebar />
-
-        {/* Main content area */}
-        <main className="flex-1 p-6 overflow-y-auto bg-gray-100">
+      {/* Main Content Area */}
+      <div className="flex flex-col flex-1 overflow-hidden">
+        <AdminNavbar />
+        <main className="flex-1 overflow-y-auto md:ml-[20%] ml-[40%] mt-16 px-6 py-4">
           <Outlet />
         </main>
       </div>

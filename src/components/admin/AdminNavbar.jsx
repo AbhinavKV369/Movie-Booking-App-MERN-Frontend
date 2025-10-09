@@ -1,16 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const AdminNavbar = () => {
   return (
-    <div className='h-15 flex items-center px-10 border-b-1 border-gray-500 bg-black/60'>
-      <Link to="/admin" className="max-md:flex-1">
-        <h1 className="font-bold text-2xl">
-          <span className="text-secondary">KNR </span> Film City
+    <header className="hidden md:flex fixed top-0 left-64 right-0 z-30 h-16 items-center justify-between px-8 bg-black/60 backdrop-blur-md border-b border-gray-800 shadow-sm">
+      <Link to="/admin">
+        <h1 className="font-bold text-2xl tracking-wide">
+          <span className="text-red-500">KNR</span> Film City
         </h1>
       </Link>
-    </div>
-  );
-}
 
-export default AdminNavbar
+      <div className="hidden md:flex items-center gap-4 text-gray-300">
+        <p className="text-sm">Welcome, Admin</p>
+        <div className="h-10 w-10 rounded-full bg-gradient-to-r from-red-500 to-red-700 flex items-center justify-center text-white font-semibold">
+          A
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default AdminNavbar;
