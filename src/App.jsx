@@ -13,11 +13,9 @@ import SeatLayout from "./pages/SeatLayout";
 import MyBooking from "./pages/MyBooking";
 import Favourites from "./pages/Favourites";
 
-<<<<<<< HEAD
+
 import AdminLayout from "./pages/admin/AdminLayout";
-=======
 import Layout from "./pages/admin/AdminLayout";
->>>>>>> 2f758c17ca527ced03a4a14c44cff93bbb35373f
 import Dashboard from "./pages/admin/Dashboard";
 import AddShows from "./pages/admin/AddShows";
 import ListShows from "./pages/admin/ListShows";
